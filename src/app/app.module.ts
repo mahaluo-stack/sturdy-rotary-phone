@@ -7,10 +7,12 @@ import { DeviceService, RoutingService, UserService } from './core/services';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ResponsiveModule } from './core/components/pages/responsive/responsive.module';
 import { PhoneModule } from './core/components/pages/phone/phone.module';
+import { HeaderComponent } from './core/components/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

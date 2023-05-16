@@ -1,7 +1,6 @@
 import { Routes } from "@angular/router";
 
 import * as PhonePages from '../components/pages/phone';
-import * as ResponsivePages from '../components/pages/responsive';
 import { responsiveRoutes } from "./responsive.routes";
 import { AuthGuard } from "../guards";
 

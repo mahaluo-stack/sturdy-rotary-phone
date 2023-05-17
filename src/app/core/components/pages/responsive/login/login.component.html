@@ -2,21 +2,23 @@
     style="width: 25%; max-width: 400px; height: 60%; max-height: 100%; margin: 30vh auto;">
 
     <div style="width: 80%; height: 80%; margin: 10% auto; display: flex; flex-direction: column;">
-        <input id="email" placeholder="email" class="signInInput" formControlName="email"
+        <input id="email" placeholder="email" class="loginInput" formControlName="email"
             [class.invalid]="loginForm.get('email')?.invalid && isSubmitted" />
 
-        <input id="password" placeholder="password" class="signInInput" formControlName="password" type="password"
+        <input id="password" placeholder="password" class="loginInput" formControlName="password" type="password"
             [class.invalid]="loginForm.get('password')?.invalid && isSubmitted" />
 
-        <div (click)="onSubmit()" class="signInBtn">
+        <div (click)="onSubmit()" class="loginBtn">
             <p>sign in</p>
         </div>
 
-        <div style="width: 100%; padding: 7px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+        <div
+            style="width: 100%; padding: 7px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
             <div style="display: flex; flex-direction: row; align-items: center;">
-                 <p style="color: gray; margin: auto 5px auto auto;"> remember me </p>
-                 <input formControlName="rememberMe" type="checkbox" style="margin: auto; accent-color: gray; cursor: pointer;" />
-             </div>
+                <p style="color: gray; margin: auto 5px auto auto;"> remember me </p>
+                <input formControlName="rememberMe" type="checkbox"
+                    style="margin: auto; accent-color: gray; cursor: pointer;" />
+            </div>
             <p class="forgotPasswordText"> forgot password </p>
         </div>
     </div>

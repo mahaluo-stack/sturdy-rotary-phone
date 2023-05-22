@@ -10,23 +10,16 @@ import { PhoneModule } from './core/components/pages/phone/phone.module';
 import { HeaderComponent } from './core/components/header/header.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
     ResponsiveModule,
-    PhoneModule
+    PhoneModule,
   ],
-  providers: [
-    DeviceService,
-    UserService,
-    RoutingService
-  ],
-  bootstrap: [AppComponent]
+  providers: [DeviceService, UserService, RoutingService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

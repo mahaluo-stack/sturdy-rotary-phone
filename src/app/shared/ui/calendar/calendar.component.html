@@ -1,1 +1,47 @@
-<p>calendar works!</p>
+<div class="wrapper">
+    <div class="container">
+
+        <div class="headerWrapper">
+            <div class="headerTopContainer">
+                <div class="headerMonths">
+                    <p id="{{currentMonthName}}" style="padding: 0; margin: 0 5px 0 0;">{{currentMonthName}}</p>
+                    <p id="{{currentYear.toString()}}" style="padding: 0; margin: 0;">{{currentYear.toString()}}</p>
+                </div>
+                <div class="headerButtons">
+                    <div class="headerBtn" style="display: flex; justify-content: center; align-items: center;"
+                        (click)="update(-1)">
+                        <p id="prevBtn">{{prevBtn}}</p>
+                    </div>
+                    <div class="headerBtn" style="display: flex; justify-content: center; align-items: center;"
+                        (click)="setToday()">
+                        <p id="todayBtn">{{todayBtn}}</p>
+                    </div>
+                    <div class="headerBtn" style="display: flex; justify-content: center; align-items: center;"
+                        (click)="update(1)">
+                        <p id="nextBtn">{{nextBtn}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="headerBottomContainer">
+                <div class="headerDays" *ngFor="let day of days">
+                    <p [id]="day" style="padding: 0; margin: 0 0 0 3px;"
+                        [ngStyle]="{'color': (days[today.getDay() - 1] === day) ? 'red' : 'black'}">
+                        {{device.type === 'phone' ? (day === "sunday" ? day.substring(0, 2) : day.substring(0, 1)) :
+                        day}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="calendarWrapper">
+            <div class="calendarContainer">
+                <div style="cursor: pointer;"
+                    [ngClass]="date.dateString === selectedDateString ? 'selectedCell' : 'idleCell'"
+                    id="{{date.todayClass}}" *ngFor="let date of dates;" (click)="handleSelectDate(date.key)">
+                    <p id="{{date.id}}" style="padding: 0; margin: 1px auto auto 1px;">
+                        {{date.date}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

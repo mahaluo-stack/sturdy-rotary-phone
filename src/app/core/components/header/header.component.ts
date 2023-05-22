@@ -21,12 +21,16 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.userService.currentUser.subscribe(() => { this.setLinkList(); });
+    this.userService.currentUser.subscribe(() => {
+      this.setLinkList();
+    });
   }
 
   setLinkList(): void {
     this.linkList = [
-      ...this.userService.currentUser.value.name !== '' ? ['home', 'profile', 'current', 'log out'] : ['register', 'log in'],
+      ...(this.userService.currentUser.value.name !== ''
+        ? ['home', 'profile', 'current', 'log out']
+        : ['register', 'log in']),
     ];
   }
 
@@ -35,8 +39,8 @@ export class HeaderComponent implements OnInit {
   }
 
   handle(link: string): void {
-    if (link === 'logout') {      
-      this.userService.setCurrentUser("");
+    if (link === 'log out') {
+      this.userService.setCurrentUser('');
       this.setLinkList();
     }
 

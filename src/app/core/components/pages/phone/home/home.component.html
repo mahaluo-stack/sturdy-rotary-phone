@@ -1,1 +1,3 @@
-<div *ngIf="device.type !== 'monitor'" class="calendarButton"></div>
+<div (click)="toggleCalendar()" *ngIf="device.type !== 'monitor'" class="calendarButton"></div>
+
+<app-calendar *ngIf="showCalendar"></app-calendar>

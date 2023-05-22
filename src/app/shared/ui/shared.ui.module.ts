@@ -1,9 +1,10 @@
-import { CommonModule } from "@angular/common";
-import { NgModule } from "@angular/core";
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
-    declarations: [],
-    exports: [],
-    imports: [CommonModule]
+  declarations: [CalendarComponent],
+  exports: [CalendarComponent],
+  imports: [CommonModule],
 })
-export class SharedModule { }
+export class SharedUiModule {}

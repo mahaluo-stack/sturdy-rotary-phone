@@ -17,6 +17,6 @@ export class UserService {
 
   setCurrentUser(currentUserName: string | null) {
     if (currentUserName === '' || currentUserName === null) { this.currentUser.next({ id: '', name: '' }); }
-    else { this.currentUser.next({ id: '1', name: currentUserName !== null ? currentUserName : '' }); }
+    else { this.currentUser.next({ id: '1', name: currentUserName }); }
   }
 }

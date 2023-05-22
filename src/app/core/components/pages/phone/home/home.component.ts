@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Device } from 'src/app/core/models/types';
+import { DeviceService } from 'src/app/core/services';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  deviceService: DeviceService = inject(DeviceService);
+  device: Device;
 
+  constructor() {
+    this.device = this.deviceService.getDevice();
+  }
 }

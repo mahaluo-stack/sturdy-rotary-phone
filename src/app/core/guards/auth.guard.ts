@@ -9,7 +9,7 @@ export const AuthGuard = () => {
 
   return userService.currentUser.subscribe((currentUser) => {
     if (currentUser.name === '') {
-      router.navigateByUrl("/sign in");
+      router.navigateByUrl("/log in");
       return false;
     }
     else {

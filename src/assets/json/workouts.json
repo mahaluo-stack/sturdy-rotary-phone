@@ -1,0 +1,240 @@
+[
+    {
+        "date": "04/19/2023",
+        "warmup": {
+            "set 1": [
+                {
+                    "exercise": "rotatorcuffs",
+                    "implementation": "isolation",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 2,
+                            "reps": [
+                                15,
+                                15,
+                                15,
+                                15
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "set 2": [
+                {
+                    "exercise": "deadlift",
+                    "implementation": "compound",
+                    "equipment": "raw",
+                    "grip": "hook",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 20,
+                            "reps": [
+                                13,
+                                11
+                            ]
+                        },
+                        {
+                            "weight": 60,
+                            "reps": [
+                                10,
+                                6
+                            ]
+                        },
+                        {
+                            "weight": 100,
+                            "reps": [
+                                6
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "set 3": [
+                {
+                    "exercise": "30% incline bench press",
+                    "implementation": "compound",
+                    "equipment": "wraps",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 20,
+                            "reps": [
+                                12,
+                                10
+                            ]
+                        },
+                        {
+                            "weight": 40,
+                            "reps": [
+                                6
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "workout": {
+            "set 1": [
+                {
+                    "exercise": "deadlift",
+                    "implementation": "compound",
+                    "equipment": "raw",
+                    "grip": "hook",
+                    "interval": 4,
+                    "sets": [
+                        {
+                            "weight": 140,
+                            "reps": [
+                                8,
+                                8,
+                                7,
+                                6
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "set 2": [
+                {
+                    "exercise": "30% incline bench press",
+                    "implementation": "compound",
+                    "equipment": "wraps",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 50,
+                            "reps": [
+                                15,
+                                15,
+                                15
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "exercise": "bent over dumbbell row",
+                    "implementation": "isolation",
+                    "equipment": "wraps",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 20,
+                            "reps": [
+                                15,
+                                15,
+                                15
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "set 3": [
+                {
+                    "exercise": "15% incline dumbbell press",
+                    "implementation": "isolation",
+                    "equipment": "wraps",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 22.5,
+                            "reps": [
+                                13,
+                                12,
+                                12
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "exercise": "standing dumbbell row",
+                    "implementation": "isolation",
+                    "equipment": "wraps",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 22.5,
+                            "reps": [
+                                13,
+                                13,
+                                13
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "set 4": [
+                {
+                    "exercise": "low cableflye",
+                    "implementation": "unilateral",
+                    "equipment": "wraps",
+                    "interval": 1.5,
+                    "sets": [
+                        {
+                            "weight": 6.25,
+                            "reps": [
+                                13,
+                                13,
+                                13
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "set 5": [
+                {
+                    "exercise": "lat pulldown",
+                    "implementation": "isolation",
+                    "interval": 2,
+                    "sets": [
+                        {
+                            "weight": 21.25,
+                            "reps": [
+                                13,
+                                12,
+                                12
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "set 6": [
+                {
+                    "exercise": "rope tricep pushdown",
+                    "implementation": "isolation",
+                    "interval": 1.5,
+                    "sets": [
+                        {
+                            "weight": 10,
+                            "reps": [
+                                20,
+                                20,
+                                20,
+                                15,
+                                16
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "exercise": "over head rope tricep extension",
+                    "implementation": "isolation",
+                    "interval": 1.5,
+                    "sets": [
+                        {
+                            "weight": 5,
+                            "reps": [
+                                20,
+                                20,
+                                20,
+                                20,
+                                20
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

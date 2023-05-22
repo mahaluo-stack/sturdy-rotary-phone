@@ -11,51 +11,51 @@
   background: linear-gradient(0deg, #0D0A0B, #161a1d);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .hamburger {
-  height: 30px;
+  height: 20px;
   width: 30px;
-  margin: 1px;
-
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
 
   cursor: pointer;
 
   &:hover {
     opacity: 0.6;
   }
+  
+  p {
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 10px;
+  }
 }
 
-.logo {
-  height: 32px;
-  width: 90px;
+.dropdown {
+  width: 30vw;
+  margin: auto 10px auto auto;
+  display: flex;
+  flex-direction: column;
+}
 
-  &#logoImg {
-    height: 30px;
-    width: 30px;
-    margin: 1px;
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  &.mooseface {
-    height: 30px;
-    width: 20px;
-  }
-
-  &.rightArm {
-    height: 30px;
-    width: 20px;
-  }
-
-  &.leftArm {
-    height: 30px;
-    width: 20px;
+.linkText {
+  color: white;
+  padding: 0;
+  margin: 7px auto;
+  text-align: right;
+  cursor: pointer;
+  
+  &:hover {
+    opacity: 0.6;
   }
 }

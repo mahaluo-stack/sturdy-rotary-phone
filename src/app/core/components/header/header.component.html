@@ -1,10 +1,9 @@
 <div class="wrapper">
     <div class="container">
-        <div class="logo">
-            <div id="logoImg" class="mooseface" [style.background-image]="'url('+moosefacePath+')'"></div>
-            <div id="logoImg" class="rightArm" [style.background-image]="'url('+rightArmPath+')'"></div>
-            <div id="logoImg" class="leftArm" [style.background-image]="'url('+leftArmPath+')'"></div>
-        </div>
-        <div class="hamburger" [style.background-image]="'url('+hamburgerPath+')'"></div>
+        <div (click)="toggle()" *ngIf="device.type !== 'monitor'" class="hamburger"></div>
+    </div>
+    
+    <div *ngIf="open" class="dropdown">
+        <p *ngFor="let link of linkList" (click)="handle(link)" class="linkText">{{link}}</p>
     </div>
 </div>
